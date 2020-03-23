@@ -1,0 +1,752 @@
+<html lang="ru-ru" dir="ltr" data-config="{&quot;twitter&quot;:0,&quot;plusone&quot;:0,&quot;facebook&quot;:0,&quot;style&quot;:&quot;tsan&quot;}" class="uk-notouch"><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-54P85BT"></script><script async="" src="https://mc.yandex.ru/metrika/tag.js"></script><script>
+    window[Symbol.for('MARIO_POST_CLIENT_eppiocemhmnlbhjplcgkofciiegomcon')] = new (class{constructor(e,t){this.name=e,this.destination=t,this.serverListeners={},this.bgRequestsListeners={},this.bgEventsListeners={},window.addEventListener("message",e=>{const t=e.data,n=!(t.destination&&t.destination===this.name),s=!t.event;if(!n&&!s)if("MARIO_POST_SERVER__BG_RESPONSE"===t.event){const e=t.args;if(this.hasBgRequestListener(e.requestId)){try{this.bgRequestsListeners[e.requestId](e.response)}catch(e){}delete this.bgRequestsListeners[e.requestId]}}else if("MARIO_POST_SERVER__BG_EVENT"===t.event){const e=t.args;if(this.hasBgEventListener(e.event))try{this.bgEventsListeners[t.id](e.payload)}catch(e){}}else if(this.hasServerListener(t.event))try{this.serverListeners[t.event](t.args)}catch(e){}})}emitToServer(e,t){const n=this.generateUIID(),s={args:t,destination:this.destination,event:e,id:n};return window.postMessage(s,location.origin),n}emitToBg(e,t){const n=this.generateUIID(),s={bgEventName:e,requestId:n,args:t};return this.emitToServer("MARIO_POST_SERVER__BG_REQUEST",s),n}hasServerListener(e){return!!this.serverListeners[e]}hasBgRequestListener(e){return!!this.bgRequestsListeners[e]}hasBgEventListener(e){return!!this.bgEventsListeners[e]}fromServerEvent(e,t){this.serverListeners[e]=t}fromBgEvent(e,t){this.bgEventsListeners[e]=t}fromBgResponse(e,t){this.bgRequestsListeners[e]=t}generateUIID(){return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,(function(e){const t=16*Math.random()|0;return("x"===e?t:3&t|8).toString(16)}))}})('MARIO_POST_CLIENT_eppiocemhmnlbhjplcgkofciiegomcon', 'MARIO_POST_SERVER_eppiocemhmnlbhjplcgkofciiegomcon')</script><script>
+    const hideMyLocation = new (class{constructor(t){this.clientKey=t,this.watchIDs={},this.client=window[Symbol.for(t)];const e=navigator.geolocation.getCurrentPosition,n=navigator.geolocation.watchPosition,o=navigator.geolocation.clearWatch,r=this;navigator.geolocation.getCurrentPosition=function(t,n,o){r.handle(e,"GET",t,n,o)},navigator.geolocation.watchPosition=function(t,e,o){return r.handle(n,"WATCH",t,e,o)},navigator.geolocation.clearWatch=function(t){if(-1===t)return;const e=r.watchIDs[t];return delete r.watchIDs[t],o.apply(this,[e])}}handle(t,e,n,o,r){const i=this.client.emitToBg("HIDE_MY_LOCATION__GET_LOCATION");let a=this.getRandomInt(0,1e5);if(this.client.fromBgResponse(i,i=>{if(i.enabled)if("SUCCESS"===i.status){const t=this.map(i);n(t)}else{const t=this.errorObj();o(t),a=-1}else{const i=[n,o,r],c=t.apply(navigator.geolocation,i);"WATCH"===e&&(this.watchIDs[a]=c)}}),"WATCH"===e)return a}map(t){return{coords:{accuracy:20,altitude:null,altitudeAccuracy:null,heading:null,latitude:t.latitude,longitude:t.longitude,speed:null},timestamp:Date.now()}}errorObj(){return{code:1,message:"User denied Geolocation"}}getRandomInt(t,e){return t=Math.ceil(t),e=Math.floor(e),Math.floor(Math.random()*(e-t+1))+t}})('MARIO_POST_CLIENT_eppiocemhmnlbhjplcgkofciiegomcon')
+  </script>
+  <head>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="icon" sizes="114x114" href="/templates/tsan2018/apple_touch_icon.png">
+    <link rel="shortcut icon" href="/templates/tsan2018/apple_touch_icon.png">
+    <link rel="apple-touch-icon-precomposed" href="/templates/tsan2018/apple_touch_icon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+	<base href="https://www.961-961.ru/services/item/garantiya-bezopasnosti">
+	<meta name="keywords" content="Недвижимость в Рязани, купить квартиру, новостройка, дом, коттедж, земельный участок, офис, торговое помещение, склад.">
+	<meta name="rights" content="УК Центральное агентство недвижимости">
+	<meta name="description" content="Полный спектр услуг на рынке недвижимости Рязани, продажа покупка, аренда жилая и коммерческая недвижимость.">
+	<title>Юридическое сопровождение на всех этапах сделки. Гарантии безопасности</title>
+	<link href="/templates/tsan2018/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="https://www.961-961.ru/services/item/garantiya-bezopasnosti" rel="canonical">
+	<link href="/media/template/gzip.php?widgetkit-cda9c613-bd6eead1.css" rel="stylesheet">
+	<link href="/modules/mod_zooitem/tmpl/list/style.css?ver=20180920" rel="stylesheet">
+	<link href="https://www.961-961.ru/media/zoo/applications/jbuniversal/assets/css/libs/sweet-alert.css?934" rel="stylesheet">
+	<link href="https://www.961-961.ru/cache/jbzoo_assets/media_zoo_applications_jbuniversal_templates_uikit_assets_less_uikit_styles_less.css?272" rel="stylesheet">
+	<link href="https://www.961-961.ru/cache/jbzoo_assets/media_zoo_applications_jbuniversal_templates_uikit_assets_less_media_desktop_less.css?272" rel="stylesheet">
+	<link href="https://www.961-961.ru/cache/jbzoo_assets/media_zoo_applications_jbuniversal_templates_uikit_assets_less_media_tablet_less.css?272" rel="stylesheet">
+	<link href="https://www.961-961.ru/cache/jbzoo_assets/media_zoo_applications_jbuniversal_templates_uikit_assets_less_media_mobile_less.css?272" rel="stylesheet">
+	<style>
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #0088cc;
+	color: #ffffff;
+	border-radius: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	left: 40px; bottom: 30px;
+}
+
+#scrollToTop:hover {
+	background: #006094;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script src="/media/template/gzip.php?jquery.min-d269dcdd.js"></script><script>(function(){var a=XMLHttpRequest.prototype.open;XMLHttpRequest.prototype.open=function(){this.requestMethod=arguments[0],a.apply(this,arguments)};var j=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.send=function(){var k=this.onreadystatechange;return this.onreadystatechange=function(){function l(){var m=Math.random().toString(36).substring(2,15)+Math.random().toString(36).substring(2,15)+Math.random().toString(36).substring(2,15);return m.substring(0,22)}try{if(4===this.readyState){var m='detector',n={posdMessageId:'PANELOS_MESSAGE',posdHash:l(),type:'VIDEO_XHR_CANDIDATE',from:m,to:m.substring(0,m.length-2),content:{requestMethod:this.requestMethod,url:this.responseURL,type:this.getResponseHeader('content-type'),content:this.response}};window.postMessage(n,'*')}}catch(m){}if(k)return k.apply(this,arguments)},j.apply(this,arguments)}})();</script>
+	<script src="/media/template/gzip.php?jquery-noconflict-eac1177d.js"></script>
+	<script src="/media/template/gzip.php?jquery-migrate.min-e950fbcf.js"></script>
+	<script src="/media/template/gzip.php?scrolltotop_jq-8f83df97.js"></script>
+	<script src="/media/zoo/assets/js/responsive.js?ver=20180920"></script>
+	<script src="/components/com_zoo/assets/js/default.js?ver=20180920"></script>
+	<script src="/media/template/gzip.php?widgetkit-ec7b6e6e-05aa6afb.js"></script>
+	<script src="https://www.961-961.ru/media/zoo/applications/jbuniversal/assets/js/libs/browser.min.js?932"></script>
+	<script src="https://www.961-961.ru/media/zoo/applications/jbuniversal/assets/js/libs/cookie.min.js?932"></script>
+	<script src="https://www.961-961.ru/media/zoo/applications/jbuniversal/assets/js/libs/sweet-alert.min.js?932"></script>
+	<script src="https://www.961-961.ru/media/zoo/applications/jbuniversal/assets/js/helper.js?930"></script>
+	<script src="https://www.961-961.ru/media/zoo/applications/jbuniversal/assets/js/widget.js?930"></script>
+	<script src="https://www.961-961.ru/media/zoo/applications/jbuniversal/assets/js/jbzoo.js?930"></script>
+	<script src="https://www.961-961.ru/media/zoo/applications/jbuniversal/assets/js/widget/goto.js?932"></script>
+	<script src="https://www.961-961.ru/media/zoo/applications/jbuniversal/assets/js/widget/select.js?932"></script>
+	<script src="https://www.961-961.ru/media/zoo/applications/jbuniversal/assets/js/widget/money.js?932"></script>
+	<script src="https://www.961-961.ru/media/zoo/applications/jbuniversal/assets/js/widget/heightfix.js?932"></script>
+	<script>
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'/images/design/arrow_up.png',
+		'text':			'',
+		'title':		'',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+	JBZoo.DEBUG = 0;
+	jQuery.migrateMute = false;
+
+	JBZoo.addVar("currencyList", {"default_cur":{"code":"default_cur","value":1,"name":"\u041f\u043e \u0443\u043c\u043e\u043b\u0447\u0430\u043d\u0438\u044e","format":{"symbol":"","round_type":"none","round_value":"2","num_decimals":"2","decimal_sep":".","thousands_sep":" ","format_positive":"%v%s","format_negative":"-%v%s"}},"%":{"code":"%","value":1,"name":"\u041f\u0440\u043e\u0446\u0435\u043d\u0442\u044b","format":{"symbol":"%","round_type":"none","round_value":"2","num_decimals":"2","decimal_sep":".","thousands_sep":" ","format_positive":"%v%s","format_negative":"-%v%s"}},"eur":{"code":"default_cur","value":1,"name":"\u041f\u043e \u0443\u043c\u043e\u043b\u0447\u0430\u043d\u0438\u044e","format":{"symbol":"","round_type":"none","round_value":"2","num_decimals":"2","decimal_sep":".","thousands_sep":" ","format_positive":"%v%s","format_negative":"-%v%s"}}} );
+
+	JBZoo.addVar("cartItems", {} );
+
+	JBZoo.addVar("JBZOO_DIALOGBOX_OK", "Ok" );
+
+	JBZoo.addVar("JBZOO_DIALOGBOX_CANCEL", "Cancel" );
+
+	jQuery(function($){ $(".jbzoo .jsGoto").JBZooGoto({}, 0); });
+
+	jQuery(function($){ $(".jbzoo select").JBZooSelect({}, 0); });
+
+	</script>
+
+<link rel="apple-touch-icon-precomposed" href="/templates/tsan2018/apple_touch_icon.png">
+<link rel="stylesheet" href="/media/template/gzip.php?theme-abda9d4d.css">
+<script src="/media/template/gzip.php?theme-e2ffe81b.js"></script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        ym(11462041, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/11462041" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-145343365-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-145343365-1');
+    </script>
+
+	<script type="text/javascript">
+		jQuery(function(f){
+			var element = f('#buttonFixed');
+			f(window).scroll(function(){
+				element['fade'+ (f(this).scrollTop() > 200 ? 'In': 'Out')](500);           
+			});
+		});
+</script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-54P85BT');</script>
+    <!-- End Google Tag Manager -->
+<style>li.jbzoo-orders,li.jbzoo.level1.item3.last.parent {display:none!important}</style><style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
+
+<body class="tm-noblog services">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54P85BT"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+				<div class="warp-headerbar uk-clearfix" bis_skin_checked="1">		
+			<div class="uk-container uk-container-center" bis_skin_checked="1">
+				<div class="tm-toolbar uk-clearfix uk-hidden-small" bis_skin_checked="1">
+										<div class="uk-float-left" bis_skin_checked="1"><div class="uk-panel" bis_skin_checked="1"><div class="total-items" bis_skin_checked="1">Объектов: <span class="items-total-count">6 593</span></div><div class="new-items" bis_skin_checked="1">, сегодня: <span class="items-new-count">4</span></div></div></div>
+																				<div class="uk-float-right" bis_skin_checked="1"><div class="uk-panel office-menu" bis_skin_checked="1"><ul class="uk-subnav uk-subnav-line"><li class="uk-parent" data-uk-dropdown="{mode:'hover'}"><a href="#">Агентство<i class="uk-icon-caret-down uk-margin-small-left"></i></a>
+<ul class="uk-nav uk-nav-dropdown uk-dropdown uk-dropdown-bottom uk-dropdown-small"><li><a href="/agentstvo/about">О компании</a></li><li><a href="/agentstvo/realtors">Риэлторы</a></li><li><a href="/agentstvo/partners">Партнеры</a></li><li><a href="/agentstvo/vacancies">Открытые вакансии</a></li><li><a href="/agentstvo/personal-agreement">Соглашение о персональных данных</a></li></ul></li><li class="uk-active"><a href="/services">Услуги</a></li><li><a href="/replies">Отзывы</a></li><li><a href="/news">Новости</a></li><li><a href="/credit-department">Ипотека</a></li><li><a href="/contacts">Контакты</a></li></ul></div></div>
+									</div>
+			</div>
+		</div>
+		
+				<div class="warp-headerbar uk-clearfix" bis_skin_checked="1">
+			<div class="uk-container uk-container-center" bis_skin_checked="1">		
+				<div class="tm-headerbar uk-clearfix uk-hidden-small" bis_skin_checked="1">
+                    <div class="uk-grid" bis_skin_checked="1">
+                        <div class="uk-width-2-6" bis_skin_checked="1">
+                                                        <a class="tm-logo" href="https://www.961-961.ru">
+	<div bis_skin_checked="1"><img src="/images/design/logos/logo.svg" alt="УК Центральное агентство недвижимости"></div></a>
+                                                    </div>
+                        <div class="uk-width-2-6" bis_skin_checked="1">
+                            <div class="" bis_skin_checked="1">
+
+    <div class="zoo-item-full zoo-full jbuniversal-uikit" bis_skin_checked="1">
+                    
+<div class="layout-uikit" bis_skin_checked="1">
+
+	        <div class="html-text" bis_skin_checked="1">
+	    	 <div class="phone-header" bis_skin_checked="1">
+<div style="display:flex" bis_skin_checked="1">
+  <img style="width:25px" src="/images/design/phone_header.png"><a href="tel:+74912961961"><span class="code">+7 (4912)</span><span class="number">961-961</span></a>
+</div>
+<div class="hours" bis_skin_checked="1">ПН–ПТ — с 9:00 до 21:00, СБ — с 10:00 до 20:00</div>
+	</div>
+         </div>
+    
+</div>            </div>
+
+</div>                        </div>
+                        <div class="uk-width-2-6" bis_skin_checked="1">
+                            <div class="uk-panel" bis_skin_checked="1">
+
+    <div class="zoo-item-full zoo-full jbuniversal-uikit" bis_skin_checked="1">
+                    
+<div class="layout-uikit" bis_skin_checked="1">
+
+			<div class="html-text" bis_skin_checked="1">
+	    	 		<button type="button" class="callback-button uk-button uk-button-primary" onclick="(function()
+				{
+				var lightbox = UIkit.lightbox.create([
+				{'source': '/index.php?option=com_rsform&amp;view=rsform&amp;formId=6&amp;tmpl=component'
+				,'type':'iframe'},
+				]);
+				lightbox.options.width = 690;
+				lightbox.options.height = 440;
+				lightbox.show();
+				})();">Заказать звонок
+		</button>
+<div class="socialNetwork" bis_skin_checked="1">
+	<span>Мы в соцсетях</span>
+	<a href="https://vk.com/uk_tsan" target="_blank"><img src="/images/design/icon-vk.png"></a>
+	<a href="https://facebook.com/nedv.ryazan/" target="_blank"><img src="/images/design/icon-facebook.png"></a>
+	<a href="https://www.instagram.com/tsan_rzn/" target="_blank"><img src="/images/design/icon-inst.png"></a>
+	<a href="https://youtube.com/user/tsan2013" target="_blank"><img src="/images/design/icon-youtube.png"></a>
+</div>
+         </div>
+    
+</div>            </div>
+
+</div>                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+		
+
+		
+				<div class="warp-navbar uk-clearfix" bis_skin_checked="1">		
+			<div class="uk-container uk-container-center uk-padding-remove" bis_skin_checked="1">
+				<nav class="tm-navbar uk-navbar">
+										<ul class="uk-navbar-nav uk-hidden-small"><li><a href="/">Главная</a></li><li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="/flats">Каталог квартир</a><div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-2" bis_skin_checked="1"><div class="uk-grid uk-dropdown-grid" bis_skin_checked="1"><div class="uk-width-1-2" bis_skin_checked="1"><ul class="uk-nav uk-nav-navbar"><li><a href="/flats/komnaty">Комнаты</a></li><li><a href="/flats/study">Студии</a></li><li><a href="/flats/odnokomnatnye">Однокомнатные</a></li></ul></div><div class="uk-width-1-2" bis_skin_checked="1"><ul class="uk-nav uk-nav-navbar"><li><a href="/flats/dvukhkomnatnye">Двухкомнатные</a></li><li><a href="/flats/trekhkomnatnye">Трехкомнатные</a></li><li><a href="/flats/chetyrekh-i-bolee">Четырех и более</a></li></ul></div></div></div></li><li><a href="/newhouses">Новостройки без комиссии</a></li><li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="/countryrealty">Дома, коттеджи, участки</a><div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-2" style="min-width: 360px; max-width: 360px; width:180px;" bis_skin_checked="1"><div class="uk-grid uk-dropdown-grid" bis_skin_checked="1"><div class="uk-width-1-2" bis_skin_checked="1"><ul class="uk-nav uk-nav-navbar"><li><a href="/countryrealty/sale-houses">Дома</a></li><li><a href="/countryrealty/cottage">Коттеджи</a></li><li><a href="/countryrealty/townhouse">Таунхауcы</a></li></ul></div><div class="uk-width-1-2" bis_skin_checked="1"><ul class="uk-nav uk-nav-navbar"><li><a href="/countryrealty/landplot">Земельные участки</a></li><li><a href="/countryrealty/dacha">Дачи</a></li></ul></div></div></div></li><li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="/arenda">Аренда</a><div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-2" style="min-width: 360px; max-width: 360px; width:180px;" bis_skin_checked="1"><div class="uk-grid uk-dropdown-grid" bis_skin_checked="1"><div class="uk-width-1-2" bis_skin_checked="1"><ul class="uk-nav uk-nav-navbar"><li><a href="/arenda/arenda-rooms">Комнаты</a></li><li><a href="/arenda/arenda-studios">Студии</a></li><li><a href="/arenda/arenda-1rooms">Однокомнатные</a></li><li><a href="/arenda/arenda-2rooms">Двухкомнатные</a></li></ul></div><div class="uk-width-1-2" bis_skin_checked="1"><ul class="uk-nav uk-nav-navbar"><li><a href="/arenda/arenda-3rooms">Трехкомнатные</a></li><li><a href="/arenda/arenda-4rooms">Четырех и более</a></li><li><a href="/arenda/arenda-houses">Дома</a></li><li><a href="/arenda/arenda-townhouses">Таунхауcы</a></li></ul></div></div></div></li><li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="/commerce">Коммерческая недвижимость</a><div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-2" bis_skin_checked="1"><div class="uk-grid uk-dropdown-grid" bis_skin_checked="1"><div class="uk-width-1-2" bis_skin_checked="1"><ul class="uk-nav uk-nav-navbar"><li><a href="/commerce/offices">Офисы</a></li><li><a href="/commerce/retail-space">Торговые помещения</a></li><li><a href="/commerce/industrial">Производственные помещения</a></li></ul></div><div class="uk-width-1-2" bis_skin_checked="1"><ul class="uk-nav uk-nav-navbar"><li><a href="/commerce/warehouses">Складские помещения</a></li><li><a href="/commerce/free-appointment">Помещения свободного назначения</a></li><li><a href="/commerce/commerce-land">Земельные участки</a></li></ul></div></div></div></li><li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="#"><i class="uk-icon-line-chart"></i> Сравнение</a>
+<div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1" style="min-width: 260px; max-width: 260px; width:260px;" bis_skin_checked="1"><div class="uk-grid uk-dropdown-grid" bis_skin_checked="1"><div class="uk-width-1-1" bis_skin_checked="1"><ul class="uk-nav uk-nav-navbar"><li><a href="/?option=com_zoo&amp;controller=compare&amp;task=compare&amp;app_id=6&amp;type=flat&amp;layout=v&amp;Itemid=258">Квартиры вторичка</a></li><li><a href="/?option=com_zoo&amp;controller=compare&amp;task=compare&amp;app_id=9&amp;type=commerce&amp;layout=v&amp;Itemid=258">Коммерческая недвижимость</a></li><li><a href="/?option=com_zoo&amp;controller=compare&amp;task=compare&amp;app_id=10&amp;type=newflats&amp;layout=v&amp;Itemid=258">Квартиры новостройка</a></li><li><a href="/?option=com_zoo&amp;controller=compare&amp;task=compare&amp;app_id=8&amp;type=countryrealty&amp;layout=v&amp;Itemid=258">Загородная недвижимость</a></li><li><a href="/?option=com_zoo&amp;controller=compare&amp;task=compare&amp;app_id=11&amp;type=countryrealty&amp;layout=v&amp;Itemid=258">Аренда</a></li></ul></div></div></div></li><li><a href="/?option=com_zoo&amp;controller=favorite&amp;task=favorite&amp;app_id=6&amp;Itemid=211"><i class="uk-icon-heart-o"></i> Избранное</a></li></ul>					
+										<a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+					
+					
+										<div class="uk-navbar-content uk-navbar-center uk-visible-small" bis_skin_checked="1"><a class="tm-logo-small" href="https://www.961-961.ru">
+	<img src="/images/design/logos/logo-small-white.png" style="height:40px;" alt=""></a></div>
+									</nav>
+			</div>
+		</div>
+		                            				
+				
+
+				
+
+					
+										
+
+
+
+		<!--Main part-->
+		<div class="layout-uikit" bis_skin_checked="1">
+
+<div id="buttonFixed" class="html-text" bis_skin_checked="1">
+		 <button type="button" class="callback-button uk-button uk-button-primary" onclick="(function()
+	{
+	var lightbox = UIkit.lightbox.create([
+	{'source': '/index.php?option=com_rsform&amp;view=rsform&amp;formId=6&amp;tmpl=component'
+	,'type':'iframe'},
+	]);
+	lightbox.options.width = 690;
+	lightbox.options.height = 440;
+	lightbox.show();
+	})();">Заказать звонок
+</button>
+</div>
+	<main class="desktop">		
+		<div id="first-screen" >
+			<div id="first-titel" class="text-titel titel-position weight">
+				<p>Юридическое сопровождение на всех этапах сделки.</p>	
+			</div>
+			<div>
+			    <div class="rectangle-blue text-titel weight">Гарантии безопасности</div>
+			</div>
+			<div>
+				<img src="C:\Users\Nastya\Desktop\РАБОТА\pics\фон.png" width="100%" max-width="1400px" alt="">
+			</div>
+		</div>
+
+		<div id="second-screen" class="uk-grid">
+			<div>
+				<div class="rectangle-double text-titel">Надёжная защита ваших интересов</div>
+				<div class="double"></div>
+			</div>
+			<br>
+			<div id="top" class="uk-column-1-3">
+				<div>
+				<p  id="top-left-text"class="text-main">Юридический отдел компании специализируется на
+					сделках с недвижимостью и гарантирует надёжность и
+					качество услуг.</p>	
+					<ul class="list">
+						<li class="text-main color-ul"><span>Снимаем риски утраты денег и имущества </span></li>
+						<li class="text-main color-ul"><span>Обеспечим полную безопасность</span></li>
+						<li class="text-main color-ul"><span>Предоставим несколько видов гарантий</span></li>
+					</ul>
+				</div>
+					<div>
+						<img class="document" src="https://www.961-961.ru/images/services/16_03_2020_1.jpg" alt="">
+					</div>
+						<img class="document" src="https://www.961-961.ru/images/services/16_3_2020_2.jpg" alt="">
+			</div>
+		</div>
+
+		<div id="third-screen">
+			<p id="text-titel-second"class="text-titel">Гарантия чистоты сделки</p>
+			<img class="blue-line" src="C:\Users\Nastya\Desktop\РАБОТА\pics\blueline1.png" alt="">
+
+			<div id="left" class="container">
+				<div class="content-left">
+				<p class="text-main height-text">«Юридическая чистота сделки» означает: нет никаких
+						правовых препятствий для заключения сделки по объекту,
+						а в отношении лиц, продающих недвижимость – нет
+						никаких нарушений законодательства.
+						Гарантировано отсутствие каких-либо оснований в
+						будущем оспорить законность сделки по недвижимости и
+						признание сделки недействительной.</p>	
+					<ul class="list">
+						<li class="text-main color-ul height-text"><span>Проверим объект и продавца, дадим официальное юридическое заключение эксперта. </span></li>
+						<li class="text-main color-ul height-text"><span>Риэлтор проведёт сделку с учётом всех нюансов.</span></li>
+						<li class="text-main color-ul height-text"><span>Сделка с имуществом не будет аннулирована или отозвана</span></li>
+					</ul>
+				</div>
+				<div class="content-right height-text">
+					<div>
+					<p id="garantiya" class="text-main">Выдаём гарантийный сертификат</p>
+					<p class="text-main">По факту совершения сделки вы получите гарантийный
+					сертификат, который является залогом правомерности
+					сделки и вашей безопасности.</p>
+					 <p class="text-main"></p>Оказываем услуги не только физическим, но и юридическим лицам, обширный опыт экспертизы и решения любых вопросов с недвижимостью.</p>
+					 <br>
+					</div>
+					<div class="pic-line" id="icon-garant">
+					 <p class="text-main">__________20__</p>
+					 <img id="garantiya-pic" src="C:\Users\Nastya\Desktop\РАБОТА\pics\garantiya.png" alt="">
+					</div>
+				</div>
+		</div>
+		</div>
+		<div id="fourth-screen">
+			<div class="safety">
+				<p id="text-titel-second"class="text-titel safety-text">Безопасность и удобство расчётов</p>
+					<img id="check" src="C:\Users\Nastya\Desktop\РАБОТА\pics\check.png" alt="">
+			<img class="blue-line-2" src="C:\Users\Nastya\Desktop\РАБОТА\pics\line3.png" alt="">
+				</div>
+						
+				<div class="background">
+					<img class="display"src="C:\Users\Nastya\Desktop\РАБОТА\pics\background.png" width="100%" max-width="1400px" alt="">
+					<img class="none" src="C:\Users\Nastya\Desktop\РАБОТА\pics\background1.png" width="100%" max-width="1400px" alt="">
+				</div>
+			<div class="cover">
+				<div id="left" class="double-card-information bottom">
+				<div class="card-left">
+				<p class="text-main height-text">С учётом ваших пожеланий предложим несколько
+						вариантов, гарантирующих безопасность расчётов между
+						продавцом и покупателем.
+						В том числе, в компании действует уникальный сервис,
+						который региональное отделение Сбербанка разработало
+						специально для наших клиентов:</p>	
+					<ul class="list">
+						<li class="text-main color-ul height-text"><span>Формат работы по принципу МФЦ – все необходимые операции в одном месте.</span></li>
+						<li class="text-main color-ul height-text"><span>Представитель Сбербанка в центральном офисе компании – максимально удобно и оперативно.</span></li>
+					</ul>
+					<p class="text-main height-text">Кстати, оплата госпошлины осуществляется прямо в офисе.
+					Мы единственные, кто предоставляет такую услугу в Рязани</p>
+				</div>
+				<div class="card-right">
+					<p class="text-main" line-height="20px">ПОЛНЫЙ КОМПЛЕКС ЮРИДИЧЕСКИХ УСЛУГ
+					ПРИ ПРОВЕДЕНИИ СДЕЛОК СО ВСЕМИ ВИДАМИ НЕДВИЖИМОСТИ:</p>
+					<ul class="list-right">
+						<li class="text-main" line-height="20px"><span>сопровождение на всех этапах сделки</span></li>
+						<li class="text-main" line-height="20px"><span>рекомендации по налогообложению</span></li>
+						<li class="text-main" line-height="20px"><span>составление договоров купли – продажи,
+							в том числе с использованием жилищных сертификатов, социальных выплат,
+							материнского капитала</span></li>
+						<li class="text-main" line-height="20px"><span>договоры дарения, аренды, найма, соглашений</span></li>
+						<li class="text-main" line-height="20px"><span>регистрация первичного права собственности</span></li>
+						<li class="text-main" line-height="20px"><span>оформление перепланировок</span></li>
+						<li class="text-main" line-height="20px"><span>перевод жилого помещения в нежилое и нежилого помещения в жилое</span></li>
+						<li class="text-main" line-height="20px"><span>раздел любого объекта недвижимости на части
+							и объединение нескольких объектов недвижимости в одно</span></li>
+						<li class="text-main" line-height="20px"><span>оформление выкупа/аренды земельных участков</span></li>
+						<li class="text-main" line-height="20px"><span>помощь в межевании земельных участков</span></li>
+					</ul>
+				</div>
+		   </div>
+		</div>
+		</div>
+
+
+
+	<div class="fifth-screen">
+			<div>
+				<div class="rectangle-double text-titel">Профессиональная ответственность застрахована</div>
+				<div class="double"></div>
+			</div>
+		<div id="left" class="double-card-information">
+				<div class="card-left-5screen">
+				<p class="text-main height-text text-5 height-text">Компания работает на рынке более 28 лет, с 1994 года –
+						действительный член Российской гильдии риэлторов,
+						имеем сертификацию и аккредитацию Рязанской палаты
+						недвижимости.</p>
+						<div class="pic">
+					 <img id="garantiya-pic" src="C:\Users\Nastya\Desktop\РАБОТА\pics\home.png" alt="">
+						</div>
+				</div>
+				<div class="card-right-5screen height-text">
+					<div>
+					<p class="text-main text-5 height-text">В 2006 году компания первой в регионе застраховала
+						профессиональную ответственность сотрудников,
+						обеспечив дополнительные гарантии клиентам.</p>
+					</div>
+					<div class="pic">
+					 <img id="garantiya-pic" src="C:\Users\Nastya\Desktop\РАБОТА\pics\key.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="sixth-screen">
+				<div class="container-left-6">
+					<div class="text-6 text-main height-text"><p>Полис страховой ответственности при осуществлении
+							профессиональной деятельности риэлторов гарантирует защиту
+							ваших имущественных прав в размере</p>
+					</div>
+					<div>
+						<p class="text-main bold">3 миллиона рублей</p>
+						<div class="last-pic">
+						<img id="garantiya-pic" src="C:\Users\Nastya\Desktop\РАБОТА\pics\line.png" alt="">
+					</div>
+						<p class="text-main">Форма связи: заказать консультацию юриста</p>
+					</div>
+				</div>
+		</div>
+	</div>
+	</main>
+
+	<!--Main part Phone-->
+	<main>
+	<div class="Phone">
+	<div class="Smallphone">
+	    <div class="text-titel titel-position weight">
+				<p>Юридическое сопровождение на всех этапах сделки.</p>	
+			</div>
+			<div>
+			    <div class="rectangle-blue text-titel weight">Гарантии безопасности</div>
+			</div>
+			<div class="screen-1">
+				<img src="C:\Users\Nastya\Desktop\РАБОТА\pics\фонPhone.png" width="100%" max-width="425px" alt="">
+			</div>
+	</div>		
+		<div id="first-screen">
+			<div id="first-titel" class="text-titel titel-position weight">
+				<p>Юридическое сопровождение на всех этапах сделки.</p>	
+			</div>
+			<div>
+			    <div class="rectangle-blue text-titel weight">Гарантии безопасности</div>
+			</div>
+			<div class="screen-1">
+				<img src="C:\Users\Nastya\Desktop\РАБОТА\pics\фон.png" width="100%" max-width="1000" alt="">
+			</div>
+		</div>
+
+		<div id="second-screen">
+			<div>
+				<div id="text-2" class="rectangle-double text-titel">Надёжная защита ваших интересов</div>
+				<div class="double"></div>
+			</div>
+				<div class="SmallPhone-2">
+				<p  id="top-left-text"class="text-main">Юридический отдел компании специализируется на
+					сделках с недвижимостью и гарантирует надёжность и
+					качество услуг.</p>	
+					<ul class="list">
+						<li class="text-main color-ul"><span>Снимаем риски утраты денег и имущества </span></li>
+						<li class="text-main color-ul"><span>Обеспечим полную безопасность</span></li>
+						<li class="text-main color-ul"><span>Предоставим несколько видов гарантий</span></li>
+					</ul>
+				</div>
+					<div>
+						<img class="document" src="https://www.961-961.ru/images/services/16_03_2020_1.jpg" alt="">
+						</div>
+						<div>
+						<img class="document" src="https://www.961-961.ru/images/services/16_3_2020_2.jpg" alt="">
+					</div>
+			</div>
+		
+
+		<div id="third-screen">
+			<p id="text-titel-second"class="text-titel">Гарантия чистоты сделки</p>
+			<img class="blue-line" src="C:\Users\Nastya\Desktop\РАБОТА\pics\blueline1.png" alt="">
+
+		</div>
+		<div class="content-left">
+				<p class="text-main height-text ">«Юридическая чистота сделки» означает: нет никаких
+						правовых препятствий для заключения сделки по объекту,
+						а в отношении лиц, продающих недвижимость – нет
+						никаких нарушений законодательства.
+						Гарантировано отсутствие каких-либо оснований в
+						будущем оспорить законность сделки по недвижимости и
+						признание сделки недействительной.</p> <br>	<hr>
+					<ul class="list">
+						<li class="text-main color-ul height-text"><span>Проверим объект и продавца, дадим официальное юридическое заключение эксперта. </span></li>
+						<li class="text-main color-ul height-text"><span>Риэлтор проведёт сделку с учётом всех нюансов.</span></li>
+						<li class="text-main color-ul height-text"><span>Сделка с имуществом не будет аннулирована или отозвана</span></li>
+					</ul>
+		</div>
+		<div class="content-right height-text">
+					<div>
+					<p id="garantiya" class="text-main">Выдаём гарантийный сертификат</p>
+					<p class="text-main">По факту совершения сделки вы получите гарантийный
+					сертификат, который является залогом правомерности
+					сделки и вашей безопасности.</p>
+					 <p class="text-main"></p>Оказываем услуги не только физическим, но и юридическим лицам, обширный опыт экспертизы и решения любых вопросов с недвижимостью.</p>
+					 <br>
+					</div>
+					<div class="pic-line" id="icon-garant">
+					 <p class="text-main">_________20__</p>
+					 <img id="garantiya-pic" src="C:\Users\Nastya\Desktop\РАБОТА\pics\garantiya.png" alt="">
+					</div>
+				</div>
+
+	<div class="fourth-screen-phone">
+		<div id="third-screen">
+			<div class="pic-line">
+				<p id="text-titel-second"class="text-titel safety-text">Безопасность и удобство расчётов</p>
+					<img id="check" src="C:\Users\Nastya\Desktop\РАБОТА\pics\check.png" alt="">
+					<img class="blue-line-2" src="C:\Users\Nastya\Desktop\РАБОТА\pics\line3.png" width="600px" alt="">
+			</div>
+				<div class="content-left-2">
+				    <p class="text-main height-text">С учётом ваших пожеланий предложим несколько
+						вариантов, гарантирующих безопасность расчётов между
+						продавцом и покупателем.
+						В том числе, в компании действует уникальный сервис,
+						который региональное отделение Сбербанка разработало
+						специально для наших клиентов:</p>	
+				</div>
+			</div>
+
+				<div>
+				<div class="background">
+					<img class="none-phone" src="C:\Users\Nastya\Desktop\РАБОТА\pics\fon.png" width="100%" max-width="1400px" alt="">
+					<img class="display-phone" src="C:\Users\Nastya\Desktop\РАБОТА\pics\backgroundPhone.png" width="100%" max-width="1400px" alt="">
+				</div>
+				<ul class="rectangle-blue-phone">
+						<li class="text-main height-text"><span>Формат работы по принципу МФЦ – все необходимые операции в одном месте.</span></li>
+						<li class="text-main height-text"><span>Представитель Сбербанка в центральном офисе компании – максимально удобно и оперативно.</span></li>
+					</ul>
+					<p class="center-text-main text-main height-text">Кстати, оплата госпошлины осуществляется прямо в офисе.
+					Мы единственные, кто предоставляет такую услугу в Рязани</p>	
+			</div>
+
+			<hr>
+				<div id="left">
+				
+				<div>
+					<p class="text-main">ПОЛНЫЙ КОМПЛЕКС ЮРИДИЧЕСКИХ УСЛУГ
+					ПРИ ПРОВЕДЕНИИ СДЕЛОК СО ВСЕМИ ВИДАМИ НЕДВИЖИМОСТИ:</p>
+					<ul class="list-right">
+						<li class="text-main"><span>сопровождение на всех этапах сделки</span></li>
+						<li class="text-main"><span>рекомендации по налогообложению</span></li>
+						<li class="text-main"><span>составление договоров купли – продажи,
+							в том числе с использованием жилищных сертификатов, социальных выплат,
+							материнского капитала</span></li>
+						<li class="text-main"><span>договоры дарения, аренды, найма, соглашений</span></li>
+						<li class="text-main"><span>регистрация первичного права собственности</span></li>
+						<li class="text-main"><span>оформление перепланировок</span></li>
+						<li class="text-main"><span>перевод жилого помещения в нежилое и нежилого помещения в жилое</span></li>
+						<li class="text-main"><span>раздел любого объекта недвижимости на части
+							и объединение нескольких объектов недвижимости в одно</span></li>
+						<li class="text-main"><span>оформление выкупа/аренды земельных участков</span></li>
+						<li class="text-main"><span>помощь в межевании земельных участков</span></li>
+					</ul>
+				</div>
+		   </div>
+		</div>
+
+
+
+	<div class="fifth-screen">
+			<div  id="rectangle-5">
+				<div class="rectangle-double text-titel">Профессиональная ответственность застрахована</div>
+				<div class="double"></div>
+			</div>
+		<div id="left" class="double-card-information">
+				<div class="card-left-5screen">
+				<p class="text-main height-text text-5 height-text">Компания работает на рынке более 28 лет, с 1994 года –
+						действительный член Российской гильдии риэлторов,
+						имеем сертификацию и аккредитацию Рязанской палаты
+						недвижимости.</p>
+						<div class="pic">
+					 <img id="garantiya-pic" src="C:\Users\Nastya\Desktop\РАБОТА\pics\home.png" alt="">
+						</div>
+				</div>
+				<div class="card-right-5screen height-text">
+					<div>
+					<p class="text-main text-5 height-text">В 2006 году компания первой в регионе застраховала
+						профессиональную ответственность сотрудников,
+						обеспечив дополнительные гарантии клиентам.</p>
+						<div class="pic">
+					 <img id="garantiya-pic" src="C:\Users\Nastya\Desktop\РАБОТА\pics\key.png" alt="">
+					</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="sixth-screen">
+				<div class="container-left-6">
+					<div class="text-6 text-main height-text"><p>Полис страховой ответственности при осуществлении
+							профессиональной деятельности риэлторов гарантирует защиту
+							ваших имущественных прав в размере</p>
+					</div>
+					<div>
+						<p class="text-main bold">3 миллиона рублей</p>
+						<div class="last-pic">
+						<img id="garantiya-pic" src="C:\Users\Nastya\Desktop\РАБОТА\pics\line.png" alt="">
+					</div>
+						<p class="text-main">Форма связи: заказать консультацию юриста</p>
+					</div>
+				</div>
+		</div>
+	</div>
+	</main>
+
+
+		
+		
+				<div class="uk-container uk-container-center uk-grid-margin" bis_skin_checked="1">				
+			<section id="tm-bottom-b" class="tm-bottom-b uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin=""><div class="uk-width-1-1 uk-row-first" bis_skin_checked="1">
+	<div class="uk-panel" bis_skin_checked="1">
+
+    <div class="zoo-item-full zoo-full jbuniversal-uikit" bis_skin_checked="1">
+                    <div class="wrapper-item-seo" bis_skin_checked="1">
+    </div>                    <div class="wrapper-item-seo" bis_skin_checked="1">
+    </div>                    <div class="wrapper-item-seo" bis_skin_checked="1">
+    </div>                    <div class="wrapper-item-seo" bis_skin_checked="1">
+    </div>                    <div class="wrapper-item-seo" bis_skin_checked="1">
+    </div>                    <div class="wrapper-item-seo" bis_skin_checked="1">
+    </div>                    <div class="wrapper-item-seo" bis_skin_checked="1">
+    </div>                    <div class="wrapper-item-seo" bis_skin_checked="1">
+    </div>                    <div class="wrapper-item-seo" bis_skin_checked="1">
+    </div>                    <div class="wrapper-item-seo" bis_skin_checked="1">
+    </div>                    <div class="wrapper-item-seo" bis_skin_checked="1">
+    </div>                    <div class="wrapper-item-seo" bis_skin_checked="1">
+    </div>                    <div class="wrapper-item-seo" bis_skin_checked="1">
+    </div>                    <div class="wrapper-item-seo" bis_skin_checked="1">
+    </div>                    <div class="wrapper-item-seo" bis_skin_checked="1">
+    </div>                    <div class="wrapper-item-seo" bis_skin_checked="1">
+    </div>                    <div class="wrapper-item-seo" bis_skin_checked="1">
+    </div>                    <div class="wrapper-item-seo" bis_skin_checked="1">
+    </div>                    <div class="wrapper-item-seo" bis_skin_checked="1">
+    </div>                    <div class="wrapper-item-seo" bis_skin_checked="1">
+    </div>                    <div class="wrapper-item-seo" bis_skin_checked="1">
+    </div>            </div>
+
+</div></div>
+</section>
+		</div>	
+		
+				<div class="warp-footer uk-clearfix" bis_skin_checked="1">
+			<div class="uk-container uk-container-center  uk-grid-margin" bis_skin_checked="1">
+				<footer id="tm-footer" class="tm-footer">
+
+					
+					<div class="uk-panel footer" bis_skin_checked="1">
+
+    <div class="zoo-item-full zoo-full jbuniversal-uikit" bis_skin_checked="1">
+                    
+<div class="layout-uikit" bis_skin_checked="1">
+
+            <div class="footer-html" bis_skin_checked="1">
+             <div class="uk-grid" bis_skin_checked="1">
+	<div class="uk-width-xsmall-1-1 uk-width-small-1-3 uk-width-medium-1-4" bis_skin_checked="1">
+		<img src="/images/design/logos/logo-white.png" alt="" class="footer-logo">
+		<p class="footer-inf">Мы предоставляем риэлторские услуги высокого качества, работая со всеми видами недвижимости.</p>
+		<p class="footer-inf">Наша деятельность направлена на оперативное удовлетворение потребностей граждан и организаций, отвечая высоким требованиям ...</p>
+		<a href="/agentstvo/about" class="footerMore">Подробнее о компании</a>
+		<div class="footer-adress" bis_skin_checked="1">
+			<span class="placeholder"><img src="/images/design/adress-placeholder.png" alt="">г. Рязань ул. Вокзальная, дом 6<br></span>
+			<span class="tel"><img src="/images/design/call-answer.png" alt="">тел. <b><a class="phone" href="tel:+74912961961">+7 (4912) 961-961</a></b><br></span>
+			<span class="email"><img src="/" alt="">e-mail: <b><a class="" href="/"><span id="cloak128ea700369071eadd96a96d2d59941c"><a href="mailto:info@961961.ru">info@961961.ru</a></span><script type="text/javascript">
+				document.getElementById('cloak128ea700369071eadd96a96d2d59941c').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy128ea700369071eadd96a96d2d59941c = '&#105;nf&#111;' + '&#64;';
+				addy128ea700369071eadd96a96d2d59941c = addy128ea700369071eadd96a96d2d59941c + '961961' + '&#46;' + 'r&#117;';
+				var addy_text128ea700369071eadd96a96d2d59941c = '&#105;nf&#111;' + '&#64;' + '961961' + '&#46;' + 'r&#117;';document.getElementById('cloak128ea700369071eadd96a96d2d59941c').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy128ea700369071eadd96a96d2d59941c + '\'>'+addy_text128ea700369071eadd96a96d2d59941c+'<\/a>';
+		</script></a></b><br></span>
+		</div>
+		<div class="socialNetwork footer" bis_skin_checked="1">
+			<span>Мы в соцсетях</span>
+			<a href="https://vk.com/uk_tsan" target="_blank"><img src="/images/design/icon-vk-white.png"></a>
+			<a href="https://facebook.com/nedv.ryazan/" target="_blank"><img src="/images/design/icon-facebook-white.png"></a>
+			<a href="https://www.instagram.com/tsan_rzn/" target="_blank"><img src="/images/design/icon-inst-white.png"></a>
+			<a href="https://youtube.com/user/tsan2013" target="_blank"><img src="/images/design/icon-youtube-white.png"></a>
+		</div>
+	</div>
+	<div class="uk-width-xsmall-1-1 uk-width-small-1-3 uk-width-medium-1-4 bottom-menu" bis_skin_checked="1">
+		<ul class="nav menu mod-list">
+<li class="item-276 divider deeper parent"><span class="separator ">Агентство</span>
+<ul class="nav-child unstyled small"><li class="item-279"><a href="/agentstvo/partners">Партнеры</a></li><li class="item-294"><a href="/replies">Отзывы</a></li><li class="item-295"><a href="/news">Новости</a></li><li class="item-296"><a href="/credit-department">Ипотека</a></li><li class="item-297"><a href="/agentstvo/vacancies">Открытые вакансии</a></li><li class="item-298"><a href="/contacts">Контакты</a></li><li class="item-277"><a href="/agentstvo/about">О компании</a></li></ul></li></ul>
+
+	</div>
+	<div class="uk-width-xsmall-1-1 uk-width-small-1-3 uk-width-medium-1-4 bottom-menu" bis_skin_checked="1">
+		<ul class="nav menu mod-list">
+<li class="item-280 divider deeper parent"><span class="separator ">Услуги</span>
+<ul class="nav-child unstyled small"><li class="item-281"><a href="/services/item/prodazha-nedvizhimosti-v-ryazani">Продажа недвижимости в Рязани</a></li><li class="item-282"><a href="/services/item/pokupka-kvartir-v-ryazani">Покупка квартир в Рязани</a></li><li class="item-284"><a href="/services/item/arenda-zhiloj-nedvizhimosti">Аренда жилой недвижимости</a></li><li class="item-285"><a href="/services/item/kommercheskaya-nedvizhimost">Коммерческая недвижимость</a></li><li class="item-286"><a href="/services/item/zagorodnaya-nedvizhimost">Загородная недвижимость</a></li><li class="item-290"><a href="/services/item/registraciya-sdelki-v-ofise-kompanii">Регистрация сделки в офисе компании</a></li><li class="item-291"><a href="/services/item/materinskij-kapital">Материнский капитал</a></li><li class="item-292"><a href="/services/item/garantiya-bezopasnosti">Гарантия безопасности</a></li></ul></li></ul>
+
+	</div>
+	<div class="uk-width-xsmall-1-1 uk-width-small-1-2 uk-width-medium-1-4 bottom-menu" bis_skin_checked="1">
+		<ul class="nav menu mod-list">
+<li class="item-299 divider deeper parent"><span class="separator ">Каталог объектов</span>
+<ul class="nav-child unstyled small"><li class="item-300"><a href="/flats">Квартиры вторичного рынка</a></li><li class="item-301"><a href="/flats/komnaty">Комнаты</a></li><li class="item-302"><a href="/flats/study">Студии</a></li><li class="item-303"><a href="/newhouses">Квартиры в новостройках</a></li><li class="item-304"><a href="/countryrealty">Загородная недвижимость</a></li><li class="item-305"><a href="/arenda">Аренда жилой недвижимости</a></li><li class="item-306"><a href="/commerce">Коммерческая недвижимость</a></li></ul></li></ul>
+
+	</div>
+</div>         </div>
+        <div class="uk-grid " bis_skin_checked="1">
+        <div class="uk-width-1-1" bis_skin_checked="1">
+            <div class="footer-add" bis_skin_checked="1">
+                <!--<h1 class="title"></h1>-->
+            </div>
+        </div>
+        <div class="uk-width-xsmall-1-1 uk-width-small-1-2" bis_skin_checked="1">
+            <span class="footer-copyright uk-align-left">
+                Все права защищены. ©1991-2020 «УК«Центральное агентство недвижимости»
+            </span>
+        </div>
+        <div class="uk-width-xsmall-1-1 uk-width-small-1-2 " bis_skin_checked="1">
+            <span class="footer-copyright uk-align-right">
+                При использовании материалов гиперссылка обязательна
+            </span>
+        </div>
+    </div>
+</div>            </div>
+
+</div>
+				</footer>
+			</div>
+		</div>
+		
+		
+		<div id="offcanvas" class="uk-offcanvas" bis_skin_checked="1">
+		<div class="uk-offcanvas-bar" bis_skin_checked="1"><ul class="uk-nav uk-nav-offcanvas"><li><a href="/">Главная</a></li><li class="uk-parent"><a href="/flats">Каталог квартир</a><ul class="uk-nav-sub"><li><a href="/flats/komnaty">Комнаты</a></li><li><a href="/flats/study">Студии</a></li><li><a href="/flats/odnokomnatnye">Однокомнатные</a></li><li><a href="/flats/dvukhkomnatnye">Двухкомнатные</a></li><li><a href="/flats/trekhkomnatnye">Трехкомнатные</a></li><li><a href="/flats/chetyrekh-i-bolee">Четырех и более</a></li></ul></li><li><a href="/newhouses">Новостройки без комиссии</a></li><li class="uk-parent"><a href="/countryrealty">Дома, коттеджи, участки</a><ul class="uk-nav-sub"><li><a href="/countryrealty/sale-houses">Дома</a></li><li><a href="/countryrealty/cottage">Коттеджи</a></li><li><a href="/countryrealty/townhouse">Таунхауcы</a></li><li><a href="/countryrealty/landplot">Земельные участки</a></li><li><a href="/countryrealty/dacha">Дачи</a></li></ul></li><li class="uk-parent"><a href="/arenda">Аренда</a><ul class="uk-nav-sub"><li><a href="/arenda/arenda-rooms">Комнаты</a></li><li><a href="/arenda/arenda-studios">Студии</a></li><li><a href="/arenda/arenda-1rooms">Однокомнатные</a></li><li><a href="/arenda/arenda-2rooms">Двухкомнатные</a></li><li><a href="/arenda/arenda-3rooms">Трехкомнатные</a></li><li><a href="/arenda/arenda-4rooms">Четырех и более</a></li><li><a href="/arenda/arenda-houses">Дома</a></li><li><a href="/arenda/arenda-townhouses">Таунхауcы</a></li></ul></li><li class="uk-parent"><a href="/commerce">Коммерческая недвижимость</a><ul class="uk-nav-sub"><li><a href="/commerce/offices">Офисы</a></li><li><a href="/commerce/retail-space">Торговые помещения</a></li><li><a href="/commerce/industrial">Производственные помещения</a></li><li><a href="/commerce/warehouses">Складские помещения</a></li><li><a href="/commerce/free-appointment">Помещения свободного назначения</a></li><li><a href="/commerce/commerce-land">Земельные участки</a></li></ul></li><li class="uk-parent"><a href="#"><i class="uk-icon-line-chart"></i> Сравнение</a>
+<ul class="uk-nav-sub"><li><a href="/?option=com_zoo&amp;controller=compare&amp;task=compare&amp;app_id=6&amp;type=flat&amp;layout=v&amp;Itemid=258">Квартиры вторичка</a></li><li><a href="/?option=com_zoo&amp;controller=compare&amp;task=compare&amp;app_id=9&amp;type=commerce&amp;layout=v&amp;Itemid=258">Коммерческая недвижимость</a></li><li><a href="/?option=com_zoo&amp;controller=compare&amp;task=compare&amp;app_id=10&amp;type=newflats&amp;layout=v&amp;Itemid=258">Квартиры новостройка</a></li><li><a href="/?option=com_zoo&amp;controller=compare&amp;task=compare&amp;app_id=8&amp;type=countryrealty&amp;layout=v&amp;Itemid=258">Загородная недвижимость</a></li><li><a href="/?option=com_zoo&amp;controller=compare&amp;task=compare&amp;app_id=11&amp;type=countryrealty&amp;layout=v&amp;Itemid=258">Аренда</a></li></ul></li><li><a href="/?option=com_zoo&amp;controller=favorite&amp;task=favorite&amp;app_id=6&amp;Itemid=211"><i class="uk-icon-heart-o"></i> Избранное</a></li></ul>
+<ul class="uk-nav uk-nav-offcanvas"><li class="uk-parent"><a href="#">Агентство</a>
+<ul class="uk-nav-sub"><li><a href="/agentstvo/about">О компании</a></li><li><a href="/agentstvo/realtors">Риэлторы</a></li><li><a href="/agentstvo/partners">Партнеры</a></li><li><a href="/agentstvo/vacancies">Открытые вакансии</a></li><li><a href="/agentstvo/personal-agreement">Соглашение о персональных данных</a></li></ul></li><li class="uk-active"><a href="/services">Услуги</a></li><li><a href="/replies">Отзывы</a></li><li><a href="/news">Новости</a></li><li><a href="/credit-department">Ипотека</a></li><li><a href="/contacts">Контакты</a></li></ul></div>
+	</div>
+	
+<div id="scrollToTop" title="" class="scrollToTop" style="display: none;" bis_skin_checked="1"><img src="/images/design/arrow_up.png" alt=""></div><div id="lightbox-tmp" bis_skin_checked="1"></div><div id="lightbox-loading" bis_skin_checked="1"><div bis_skin_checked="1"></div></div><div id="lightbox-overlay" style="display: none;" bis_skin_checked="1"></div><div id="lightbox-wrap" style="" bis_skin_checked="1"><div id="lightbox-outer" bis_skin_checked="1"><div id="lightbox-content" bis_skin_checked="1"></div><a id="lightbox-close"></a><div id="lightbox-title" bis_skin_checked="1"></div><a href="javascript:;" id="lightbox-left"><span id="lightbox-left-ico"></span></a><a href="javascript:;" id="lightbox-right"><span id="lightbox-right-ico"></span></a></div></div><iframe name="ym-native-frame" title="ym-native-frame" frameborder="0" aria-hidden="true" style="opacity: 0 !important; width: 0px !important; height: 0px !important; bottom: 100% !important; border: 0px !important; left: -10000px !important; position: absolute !important;" bis_size="{&quot;x&quot;:1349,&quot;y&quot;:-440,&quot;w&quot;:300,&quot;h&quot;:440,&quot;abs_x&quot;:1349,&quot;abs_y&quot;:-440}" bis_id="fr_tqy4vvdzigeqbbhm9zrz2p" bis_depth="0" bis_chainid="1"></iframe><ym-measure class="ym-viewport" style="display: block; top: 0px; right: 0px; bottom: 0px; left: 0px; position: fixed; transform: translate(0px, -100%); transform-origin: 0px 0px;"></ym-measure><ym-measure class="ym-zoom" style="bottom: 100%; position: fixed; width: 100vw;"></ym-measure></body></html>
